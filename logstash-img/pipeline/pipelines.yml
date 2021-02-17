@@ -1,0 +1,6 @@
+input { stdin { } }
+
+output {
+  elasticsearch { hosts => ["elastic:9200"] }
+  stdout { codec => rubydebug }
+}
