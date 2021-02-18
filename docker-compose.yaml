@@ -87,6 +87,10 @@ services:
     ports:
       - 9600:9600
       - 5044:5044
+    volumes:
+      - type: bind
+        source: /home/goldman/log-bind
+        target: /usr/share/logstash/arquivos-entrada
 
 volumes:
   data01:
@@ -94,6 +98,8 @@ volumes:
   data02:
     driver: local
   data03:
+    driver: local
+  logvolumestash:
     driver: local
 
 networks:

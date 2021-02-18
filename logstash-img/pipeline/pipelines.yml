@@ -4,6 +4,8 @@ input {
   } 
 }
 
+#filter
+
 output {
   elasticsearch { hosts => ["elastic:9200"] }
   stdout { codec => rubydebug }
