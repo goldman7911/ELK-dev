@@ -41,6 +41,7 @@ Exemplo:
 ## Testando
 
  - elasticsearch
+
 Abra outra aba e envie os comandos:
 
 	curl -X GET "localhost:9200/_cat/nodes?v=true&pretty"
