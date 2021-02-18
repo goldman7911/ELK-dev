@@ -28,9 +28,7 @@ Exemplo:
 
 ## Subir o Elasticsearch
 
-	docker-compose up --detach es01 es02 es03 kibana && \
-	docker-compose build logstash
-	docker-compose run --rm --name logstash --detach logstash
+	docker-compose up --detach
 
 ## Stop
 
@@ -45,27 +43,12 @@ Exemplo:
  - elasticsearch
 Abra outra aba e envie os comandos:
 
-		curl -X GET "localhost:9200/_cat/nodes?v=true&pretty"
-		curl -X GET "localhost:9200/_cat/indices"
+	curl -X GET "localhost:9200/_cat/nodes?v=true&pretty"
+	curl -X GET "localhost:9200/_cat/indices"
 
  - logstash
 
-Na branch MAIN: para testar o logstash deve-se digitar no console
-
-exemplo digitado no stdin:
-
-	{"name": "Jankiel"}
-
-stdout:
-
-	{
-	"host" => "f49045bca097",
-	"@version" => "1",
-	"message" => "{\"name\": \"Jankiel\"}",
-	"@timestamp" => 2021-02-17T21:34:24.204Z
-	}
-
-Na branch FILE-TEST: em outra aba execute para acompanhar:
+Em outra aba execute para acompanhar:
 
 	docker logs logstash --follow --details --timestamps
   
