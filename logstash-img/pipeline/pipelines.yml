@@ -1,12 +1,22 @@
 input { 
   file { 
     path => ["/usr/share/logstash/arquivos-entrada/*"]
+    mode => ["read"]
+    delimiter => "\n"
   } 
 }
 
-#filter
+filter {
+      xml {
+        source => "ActiveTabs"
+        store_xml => false
+      }
+}
 
 output {
-  elasticsearch { hosts => ["elastic:9200"] }
+  elasticsearch { 
+    hosts => ["elastic:9200"]
+    id => "XML-ESTUDO"
+   }
   stdout { codec => rubydebug }
 }
