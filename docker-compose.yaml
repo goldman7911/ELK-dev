@@ -80,8 +80,6 @@ services:
     build: ./logstash-img
     image: logstash-jk
     container_name: logstash
-    depends_on:
-      - kibana
     networks:
       elastic:
         aliases:
