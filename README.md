@@ -15,6 +15,12 @@ Muito das configurações foram feitas devido a limitações dessa escolha -- pr
 
 #### Modificar vm.max_map_count
 
+	wsl -d docker-desktop
+	(dentro do container) sysctl -w vm.max_map_count=262144
+	(dentro do container) exit
+
+Exemplo:
+
 	PS C:\Users\janki> wsl -d docker-desktop
 	DESKTOP-R0FVBGL:/tmp/docker-desktop-root/mnt/host/c/Users/janki# sysctl -w vm.max_map_count=262144
 	vm.max_map_count = 262144
