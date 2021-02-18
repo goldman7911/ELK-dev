@@ -22,9 +22,7 @@ Muito das configurações foram feitas devido a limitações dessa escolha -- pr
 
 ## Subir o Elasticsearch
 
-	docker-compose up --detach es01 es02 es03 kibana && \
-	docker-compose build logstash
-	docker-compose run --rm --name logstash --detach logstash
+	docker-compose up --detach
 
 ## Stop
 
@@ -44,22 +42,7 @@ Abra outra aba e envie os comandos:
 
  - logstash
 
-Na branch MAIN: para testar o logstash deve-se digitar no console
-
-exemplo digitado no stdin:
-
-	{"name": "Jankiel"}
-
-stdout:
-
-	{
-	"host" => "f49045bca097",
-	"@version" => "1",
-	"message" => "{\"name\": \"Jankiel\"}",
-	"@timestamp" => 2021-02-17T21:34:24.204Z
-	}
-
-Na branch FILE-TEST: em outra aba execute para acompanhar:
+Em outra aba execute para acompanhar:
 
 	docker logs logstash --follow --details --timestamps
   
