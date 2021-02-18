@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<measCollecFile xmlns="http://latest/nmc-omc/cmNrm.doc#measCollec" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://latest/nmc-omc/cmNrm.doc#measCollec schema\pmResultSchedule.xsd">
+    <fileHeader fileFormatVersion="32.435 V7.2" vendorName="Huawei">
+        <fileSender elementType="CSCF"/>
+        <measCollec beginTime="2020-08-13T18:00:00-03:00"/>
+    </fileHeader>
+    <measData>
+        <managedElement userLabel="SPCON-IMSVMH-CSC01"/>
+        <measInfo measInfoId="335556421">
+            <granPeriod duration="PT3600S" endTime="2020-08-13T19:00:00-03:00"/>
+            <repPeriod duration="PT3600S"/>
+            <measTypes>335674424 335674425 335674426 335674427 335979011 335979012 </measTypes>
+            <measValue measObjLdn="SPCON-IMSVMH-CSC01/H248 SCTP Link Measurement:MGW ID=0, MGW name=SPO-CO-MRFP01, Link ID=23, Link name=TO_SPO-CO-MRFP01_16">
+                <measResults>250520 111739008 250523 33985687 0.003 0.001 </measResults>
+            </measValue>
+            <measValue measObjLdn="SPCON-IMSVMH-CSC01/H248 SCTP Link Measurement:MGW ID=0, MGW name=SPO-CO-MRFP01, Link ID=14, Link name=TO_SPO-CO-MRFP01_02">
+                <measResults>250651 111699488 250651 34002690 0.003 0.001 </measResults>
+            </measValue>
+        </measInfo>
+    </measData>
+    <fileFooter>
+        <measCollec endTime="2020-08-13T19:00:00-03:00"/>
+    </fileFooter>
+</measCollecFile>
