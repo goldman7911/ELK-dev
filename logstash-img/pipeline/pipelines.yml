@@ -1,4 +1,8 @@
-input { stdin { } }
+input { 
+  file { 
+    path => ["/usr/share/logstash/arquivos-entrada/*"]
+  } 
+}
 
 output {
   elasticsearch { hosts => ["elastic:9200"] }
