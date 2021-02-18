@@ -3,7 +3,7 @@
 Seguindo:
 https://www.elastic.co/guide/en/elastic-stack/current/installing-elastic-stack.html
 
-Feito para uso do WSL2 e Docker Desktop.
+Feito para uso do WSL2 e Docker Desktop.  
 Muito das configurações foram feitas devido a limitações dessa escolha -- principalmente a parte dos bind mounting.
 
 ## PRÉ REQUISITOS
