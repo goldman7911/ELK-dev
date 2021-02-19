@@ -26,7 +26,7 @@ Exemplo:
 	vm.max_map_count = 262144
 	DESKTOP-R0FVBGL:/tmp/docker-desktop-root/mnt/host/c/Users/janki# exit
 
-## Subir o Elasticsearch
+## Subir o ELK compose
 
 	docker-compose up
 
