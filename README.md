@@ -28,7 +28,7 @@ Exemplo:
 
 ## Subir o Elasticsearch
 
-	docker-compose up --detach
+	docker-compose up
 
 ## Stop
 
@@ -59,6 +59,6 @@ Conecte no container:
 
 Crie ou envie um arquivo para
 
-> /usr/share/logstash/arquivos-entrada
+> ./compose-stack/log-bind/
 
 Resultado esperado: os inputs serão enviados para o elasticsearch.
