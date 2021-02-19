@@ -89,7 +89,7 @@ services:
       - 5044:5044
     volumes:
       - type: bind
-        source: /home/goldman/log-bind
+        source: ./log-bind
         target: /usr/share/logstash/arquivos-entrada
 
 volumes:
