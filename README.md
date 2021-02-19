@@ -28,7 +28,7 @@ Exemplo:
 
 ## Subir o Elasticsearch
 
-	docker-compose up --detach
+	docker-compose up
 
 ## Stop
 
