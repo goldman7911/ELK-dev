@@ -1,2 +1,2 @@
 http.host: "0.0.0.0"
-monitoring.elasticsearch.hosts: [ "http://elastic:9200" ]
+monitoring.elasticsearch.hosts: [ "http://172.20.145.230:9200" ]

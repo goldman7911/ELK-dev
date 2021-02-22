@@ -62,3 +62,10 @@ Crie ou envie um arquivo para
 > ./compose-stack/log-bind/
 
 Resultado esperado: os inputs serão enviados para o elasticsearch.
+
+## port forwarding maquina local
+
+ssh \
+-L localhost:5601:172.20.145.230:5601 \
+-i oss.pem \
+oss@172.20.145.230
